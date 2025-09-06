@@ -1,0 +1,18 @@
+{
+  "name": "capstone-project",
+  "version": "1.0.0",
+  "description": "Full-stack capstone project with Next.js and Express.js",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "cd frontend && npm install && cd ../backend && npm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["nextjs", "expressjs", "capstone", "fullstack"],
+  "author": "Capstone Student",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
