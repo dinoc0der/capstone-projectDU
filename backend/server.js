@@ -1,3 +1,4 @@
+// backend/server.js
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
@@ -26,7 +27,7 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use('/api', require('./src/routes/api'));
 
-// Health check endpoint
+// Health check
 app.get('/api/health', (req, res) => {
   res.json({ 
     status: 'OK', 
